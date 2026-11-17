@@ -1,0 +1,27 @@
+test_angle_rate_and_amplitude_bounds_during_command_reversals (test_mixer_sim.SimulationTests) ... ok
+test_bad_event_schema_clears_active_state_before_raising (test_mixer_sim.SimulationTests) ... ok
+test_cli_bad_json_or_schema_after_activity_finishes_with_no_targets (test_mixer_sim.SimulationTests) ... ok
+test_cli_outputs_json_and_rejects_incomplete_schema (test_mixer_sim.SimulationTests) ... ok
+test_demo_exercises_loss_usb_timeout_without_automatic_restart (test_mixer_sim.SimulationTests) ... ok
+test_each_side_uses_its_own_envelope (test_mixer_sim.SimulationTests) ... ok
+test_explicit_disarm_clears_output_immediately (test_mixer_sim.SimulationTests) ... ok
+test_fault_low_frames_cannot_qualify_startup (test_mixer_sim.SimulationTests) ... ok
+test_high_throttle_rejection_consumes_edge (test_mixer_sim.SimulationTests) ... ok
+test_invalid_configuration_is_rejected (test_mixer_sim.SimulationTests) ... ok
+test_invalid_inputs_trip_instead_of_clamping_or_coercing (test_mixer_sim.SimulationTests) ... ok
+test_invalid_time_trips_and_does_not_poison_next_valid_time (test_mixer_sim.SimulationTests) ... ok
+test_late_frame_does_not_rebuild_low_qualification (test_mixer_sim.SimulationTests) ... ok
+test_loss_or_usb_clears_output_and_rearm_history (test_mixer_sim.SimulationTests) ... ok
+test_low_qualification_itself_expires (test_mixer_sim.SimulationTests) ... ok
+test_low_throttle_threshold_is_inclusive (test_mixer_sim.SimulationTests) ... ok
+test_oversized_integer_is_invalid_and_clears_an_active_state (test_mixer_sim.SimulationTests) ... ok
+test_reset_removes_arming_qualification (test_mixer_sim.SimulationTests) ... ok
+test_snapshots_cannot_mutate_state_and_never_claim_hardware_validation (test_mixer_sim.SimulationTests) ... ok
+test_startup_high_cannot_arm_even_at_zero_throttle (test_mixer_sim.SimulationTests) ... ok
+test_timeout_boundary_without_new_frames (test_mixer_sim.SimulationTests) ... ok
+test_virtual_mixing_direction_and_zero_throttle (test_mixer_sim.SimulationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.136s
+
+OK

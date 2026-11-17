@@ -1,0 +1,192 @@
+{
+  "date_asia_shanghai": "2026-11-17",
+  "tested_baseline_commit": "bc7800446749a4847f2a3fe5a0b728d8c36fbfd8",
+  "source_description": "Checkout at baseline commit plus the same-batch link-loss correction to simulate.py",
+  "tested_source_sha256": {
+    "mixer_sim.py": "706f0ed013bc717c9350ba2c969d60cf2cdc14e3e006ec9e8cf785b61f395df6",
+    "run_sim.py": "e4bab9040b677eb198012783deafc570bccb37c6be2ff93541fd63d8a31f02a8",
+    "simulate.py": "fe8a3f1c9d48a542562836af46bef2a759463cf693a29ab3356b5bec3d59a42f",
+    "test_mixer_sim.py": "32f15c0eeaf92b33a16182423a6f0f4309953e00007c3eecf22123e6531367c8",
+    "example-commands.jsonl": "45acc302b78b2fdbc06b9039f1d203c90d6acdcc6f50067a2b1ab6a4141918c8"
+  },
+  "python": "3.9.6",
+  "scope": "offline host model using artificial geometry and virtual PWM",
+  "control_checks": "PASS",
+  "physical_free_flight": "UNVERIFIED",
+  "byte_identical_repeat": [
+    "simulation-result.json",
+    "simulation-trace.csv",
+    "simulation-run.txt"
+  ],
+  "summary": {
+    "unit_tests": 22,
+    "integrated_control_checkpoints": 33,
+    "straight_cases": 5,
+    "maneuver_cases": 1,
+    "duration_per_case_s": 65,
+    "trace_rows": 1969,
+    "virtual_pwm_us_min": 1113,
+    "virtual_pwm_us_max": 1913,
+    "model_angle_deg_min": -50.2109,
+    "model_angle_deg_max": 50.2092,
+    "positive_steering_right_dominant_samples": 3330,
+    "negative_steering_left_dominant_samples": 3330,
+    "pitch_offset_samples": 6660,
+    "demo_transitions": 12,
+    "example_replay_rows": 10,
+    "integration_step_relative_qS_change": 0.0001568922814953199
+  },
+  "independent_packet_checks": [
+    {
+      "check": "fresh_low",
+      "time_s": 0.0,
+      "state": "READY_FOR_NEW_ARM_EDGE",
+      "reason": "ARM_LOW_SEEN_WAIT_NEW_EDGE",
+      "virtual_pwm_us": null,
+      "wing_amplitudes_deg": null
+    },
+    {
+      "check": "fresh_rising_arm_edge",
+      "time_s": 0.01,
+      "state": "ARMED",
+      "reason": "SIMULATED_TARGETS_ACTIVE",
+      "virtual_pwm_us": {
+        "left": 1520,
+        "right": 1520
+      },
+      "wing_amplitudes_deg": {
+        "left": 0.0,
+        "right": 0.0
+      }
+    },
+    {
+      "check": "neutral_virtual_mirrored_pulses",
+      "time_s": 0.02,
+      "state": "ARMED",
+      "reason": "SIMULATED_TARGETS_ACTIVE",
+      "virtual_pwm_us": {
+        "left": 1570,
+        "right": 1470
+      },
+      "wing_amplitudes_deg": {
+        "left": 40.0,
+        "right": 40.0
+      }
+    },
+    {
+      "check": "positive_turn_right_command_dominant",
+      "time_s": 0.03,
+      "state": "ARMED",
+      "reason": "SIMULATED_TARGETS_ACTIVE",
+      "virtual_pwm_us": {
+        "left": 1594,
+        "right": 1396
+      },
+      "wing_amplitudes_deg": {
+        "left": 30.0,
+        "right": 50.0
+      }
+    },
+    {
+      "check": "negative_turn_left_command_dominant",
+      "time_s": 0.04,
+      "state": "ARMED",
+      "reason": "SIMULATED_TARGETS_ACTIVE",
+      "virtual_pwm_us": {
+        "left": 1698,
+        "right": 1411
+      },
+      "wing_amplitudes_deg": {
+        "left": 50.0,
+        "right": 30.0
+      }
+    },
+    {
+      "check": "lq_zero_then_recovery_in_same_chunk",
+      "time_s": 0.05,
+      "state": "NEEDS_ARM_LOW",
+      "reason": "LINK_LOST",
+      "virtual_pwm_us": null,
+      "wing_amplitudes_deg": null
+    },
+    {
+      "check": "hold_arm_high_after_batched_recovery",
+      "time_s": 0.06,
+      "state": "NEEDS_ARM_LOW",
+      "reason": "NEEDS_VALID_ARM_LOW",
+      "virtual_pwm_us": null,
+      "wing_amplitudes_deg": null
+    },
+    {
+      "check": "explicit_arm_low_after_batched_recovery",
+      "time_s": 0.07,
+      "state": "READY_FOR_NEW_ARM_EDGE",
+      "reason": "ARM_LOW_SEEN_WAIT_NEW_EDGE",
+      "virtual_pwm_us": null,
+      "wing_amplitudes_deg": null
+    },
+    {
+      "check": "new_arm_edge_after_batched_recovery",
+      "time_s": 0.08,
+      "state": "ARMED",
+      "reason": "SIMULATED_TARGETS_ACTIVE",
+      "virtual_pwm_us": {
+        "left": 1520,
+        "right": 1520
+      },
+      "wing_amplitudes_deg": {
+        "left": 0.0,
+        "right": 0.0
+      }
+    }
+  ],
+  "before_correction_reproduction": {
+    "test": "While armed, one receive chunk held three records in order: LQ=0, LQ=100, arm-high command.",
+    "observed": "ARMED remained with nonempty virtual PWM.",
+    "expected": "Command targets disabled and a fresh low-to-high arm edge required after recovery.",
+    "observed_trace": [
+      {
+        "time_s": 0.02,
+        "stimulus": "arm-high command before link interruption",
+        "state": "ARMED",
+        "reason": "SIMULATED_TARGETS_ACTIVE",
+        "virtual_pwm_us": {
+          "left": 1550,
+          "right": 1486
+        }
+      },
+      {
+        "time_s": 0.03,
+        "stimulus": "batched LQ=0, LQ=100, arm-high command",
+        "state": "ARMED",
+        "reason": "SIMULATED_TARGETS_ACTIVE",
+        "virtual_pwm_us": {
+          "left": 1580,
+          "right": 1454
+        }
+      },
+      {
+        "time_s": 0.04,
+        "stimulus": "separate LQ=0 plus arm-high command",
+        "state": "NEEDS_ARM_LOW",
+        "reason": "LINK_LOST",
+        "virtual_pwm_us": null
+      },
+      {
+        "time_s": 0.05,
+        "stimulus": "separate LQ=100 plus arm-high command",
+        "state": "NEEDS_ARM_LOW",
+        "reason": "NEEDS_VALID_ARM_LOW",
+        "virtual_pwm_us": null
+      }
+    ]
+  },
+  "raw_evidence_sha256": {
+    "demo-transitions.jsonl": "55d1922fc4153ce6594245b21f6034dc97f8486d421ad140d1a226529e8bf712",
+    "example-replay.jsonl": "8cc0f745d906f3ec03514e630b23b17a0cd32cc7a6de7a78e0efabf320891f36",
+    "simulation-result.json": "c323ce8f5eb3744728453c105186231b9307ff72372e9c3e295dd31284a8bdd5",
+    "simulation-run.txt": "8736f351b32aecafb5eeb5b2bc17ab0616d00ff66cb24c5b8f3b569a8ea6f21f",
+    "simulation-trace.csv": "11b05d8ffde4d768a087ac831463184bf696cb742f323a7d6cf8e26089ec62ba",
+    "unit-tests.txt": "3e25b7dd5aa348a81344170a52488062d4a3da6200b94e2e1c7ffc1f459053a5"
+  }
+}

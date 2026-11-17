@@ -1,0 +1,603 @@
+{
+  "control_simulation": "PASS",
+  "flight_feasibility": "UNVERIFIED",
+  "physical_data": null,
+  "scope": "Offline example with synthetic wing geometry. No measured flight data.",
+  "wing": {
+    "area_m2": 0.039599999999999996,
+    "area_r2_m": 0.08981462390204988,
+    "area_moment3_m5": 2.1083039999999997e-05,
+    "weight_n": 0.29419949999999995,
+    "rho": 1.17
+  },
+  "fault_replay": [
+    {
+      "time_s": 0.0,
+      "reason": "NEEDS_VALID_ARM_LOW",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.01,
+      "reason": "NEEDS_VALID_ARM_LOW",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.02,
+      "reason": "ARM_LOW_SEEN_WAIT_NEW_EDGE",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.03,
+      "reason": "ARM_REJECTED_HIGH_THROTTLE",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.04,
+      "reason": "NEEDS_VALID_ARM_LOW",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.05,
+      "reason": "ARM_LOW_SEEN_WAIT_NEW_EDGE",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.06,
+      "reason": "SIMULATED_TARGETS_ACTIVE",
+      "virtual_pwm_us": {
+        "left": 1520,
+        "right": 1520
+      }
+    },
+    {
+      "time_s": 0.1,
+      "reason": "SIMULATED_TARGETS_ACTIVE",
+      "virtual_pwm_us": {
+        "left": 1633,
+        "right": 1380
+      }
+    },
+    {
+      "time_s": 0.12,
+      "reason": "SIMULATED_TARGETS_ACTIVE",
+      "virtual_pwm_us": {
+        "left": 1678,
+        "right": 1326
+      }
+    },
+    {
+      "time_s": 0.36,
+      "reason": "COMMAND_TIMEOUT",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.37,
+      "reason": "NEEDS_VALID_ARM_LOW",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.38,
+      "reason": "ARM_LOW_SEEN_WAIT_NEW_EDGE",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.39,
+      "reason": "SIMULATED_TARGETS_ACTIVE",
+      "virtual_pwm_us": {
+        "left": 1520,
+        "right": 1520
+      }
+    },
+    {
+      "time_s": 0.4,
+      "reason": "USB_VBUS_PRESENT_SIMULATED_LOCK",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.41,
+      "reason": "NEEDS_VALID_ARM_LOW",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.42,
+      "reason": "ARM_LOW_SEEN_WAIT_NEW_EDGE",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.43,
+      "reason": "SIMULATED_TARGETS_ACTIVE",
+      "virtual_pwm_us": {
+        "left": 1520,
+        "right": 1520
+      }
+    },
+    {
+      "time_s": 0.44,
+      "reason": "ARM_LOW_SEEN_WAIT_NEW_EDGE",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.45,
+      "reason": "SIMULATED_TARGETS_ACTIVE",
+      "virtual_pwm_us": {
+        "left": 1520,
+        "right": 1520
+      }
+    },
+    {
+      "time_s": 0.46,
+      "reason": "ARM_LOW_SEEN_WAIT_NEW_EDGE",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.47,
+      "reason": "SIMULATED_TARGETS_ACTIVE",
+      "virtual_pwm_us": {
+        "left": 1520,
+        "right": 1520
+      }
+    },
+    {
+      "time_s": 0.48,
+      "reason": "LINK_LOST",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.49,
+      "reason": "LINK_LOST",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.5,
+      "reason": "NEEDS_VALID_ARM_LOW",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.51,
+      "reason": "ARM_LOW_SEEN_WAIT_NEW_EDGE",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.52,
+      "reason": "SIMULATED_TARGETS_ACTIVE",
+      "virtual_pwm_us": {
+        "left": 1520,
+        "right": 1520
+      }
+    },
+    {
+      "time_s": 0.53,
+      "reason": "ARM_LOW_SEEN_WAIT_NEW_EDGE",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.54,
+      "reason": "SIMULATED_TARGETS_ACTIVE",
+      "virtual_pwm_us": {
+        "left": 1520,
+        "right": 1520
+      }
+    },
+    {
+      "time_s": 0.55,
+      "reason": "LINK_LOST",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.56,
+      "reason": "NEEDS_VALID_ARM_LOW",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.57,
+      "reason": "ARM_LOW_SEEN_WAIT_NEW_EDGE",
+      "virtual_pwm_us": null
+    },
+    {
+      "time_s": 0.58,
+      "reason": "SIMULATED_TARGETS_ACTIVE",
+      "virtual_pwm_us": {
+        "left": 1520,
+        "right": 1520
+      }
+    },
+    {
+      "time_s": 0.59,
+      "reason": "ARM_LOW_SEEN_WAIT_NEW_EDGE",
+      "virtual_pwm_us": null
+    }
+  ],
+  "integration_step_relative_qS_change": 0.0001568922814953199,
+  "straight_cases": {
+    "cap40_nominal": {
+      "elapsed_simulated_s": 65,
+      "analysis_start_s": 5,
+      "commanded_wing_cap_deg": 40.0,
+      "neutral_command_half_amplitude_deg": 32.0,
+      "frequency_hz": 2.5,
+      "full_steering_required_rate_deg_s": 628.3185307179587,
+      "integrator_substeps_per_pwm_frame": 3,
+      "drive_assumptions": {
+        "voltage": 7.4,
+        "wing_mass_radius_m": 0.16,
+        "drag_coefficient": 1.2,
+        "servo_bandwidth_hz": 12.0,
+        "factor": 1.0
+      },
+      "sides": {
+        "left": {
+          "target_half_range_deg": 32.0,
+          "simulated_half_range_deg": 31.579041901945992,
+          "tracking_rmse_deg": 6.876886582650118,
+          "torque_clip_pct": 0.0,
+          "peak_simulated_rate_deg_s": 493.1937515787825,
+          "positive_shaft_work_j": 1.1217871335486007
+        },
+        "right": {
+          "target_half_range_deg": 32.0,
+          "simulated_half_range_deg": 31.579041901945992,
+          "tracking_rmse_deg": 6.876886582650118,
+          "torque_clip_pct": 0.0,
+          "peak_simulated_rate_deg_s": 493.1937515787825,
+          "positive_shaft_work_j": 1.1217871335486007
+        }
+      },
+      "force_screen": [
+        {
+          "assumed_forward_speed_m_s": 0.0,
+          "qS_N": 0.006991438929078497,
+          "required_effective_Cz_weight": 42.0799642225834,
+          "required_effective_Cz_20pct_reserve": 50.49595706710008
+        },
+        {
+          "assumed_forward_speed_m_s": 1.0,
+          "qS_N": 0.030157438929078493,
+          "required_effective_Cz_weight": 9.755453727084433,
+          "required_effective_Cz_20pct_reserve": 11.706544472501319
+        },
+        {
+          "assumed_forward_speed_m_s": 2.0,
+          "qS_N": 0.09965543892907848,
+          "required_effective_Cz_weight": 2.9521670182936237,
+          "required_effective_Cz_20pct_reserve": 3.542600421952349
+        },
+        {
+          "assumed_forward_speed_m_s": 3.0,
+          "qS_N": 0.21548543892907845,
+          "required_effective_Cz_weight": 1.3652871463710743,
+          "required_effective_Cz_20pct_reserve": 1.6383445756452892
+        }
+      ],
+      "left_dominant_samples": 0,
+      "right_dominant_samples": 0,
+      "pitch_offset_samples": 0,
+      "lost_pwm_frames_after_0p11s": 0,
+      "final_virtual_pwm_disabled": true
+    },
+    "neutral40_nominal": {
+      "elapsed_simulated_s": 65,
+      "analysis_start_s": 5,
+      "commanded_wing_cap_deg": 50.0,
+      "neutral_command_half_amplitude_deg": 40.0,
+      "frequency_hz": 2.5,
+      "full_steering_required_rate_deg_s": 785.3981633974482,
+      "integrator_substeps_per_pwm_frame": 3,
+      "drive_assumptions": {
+        "voltage": 7.4,
+        "wing_mass_radius_m": 0.16,
+        "drag_coefficient": 1.2,
+        "servo_bandwidth_hz": 12.0,
+        "factor": 1.0
+      },
+      "sides": {
+        "left": {
+          "target_half_range_deg": 40.0,
+          "simulated_half_range_deg": 39.46614989140909,
+          "tracking_rmse_deg": 8.618801302366705,
+          "torque_clip_pct": 0.0,
+          "peak_simulated_rate_deg_s": 616.4620522578955,
+          "positive_shaft_work_j": 1.8041170563584663
+        },
+        "right": {
+          "target_half_range_deg": 40.0,
+          "simulated_half_range_deg": 39.46614989140909,
+          "tracking_rmse_deg": 8.618801302366705,
+          "torque_clip_pct": 0.0,
+          "peak_simulated_rate_deg_s": 616.4620522578955,
+          "positive_shaft_work_j": 1.8041170563584663
+        }
+      },
+      "force_screen": [
+        {
+          "assumed_forward_speed_m_s": 0.0,
+          "qS_N": 0.010917730515816118,
+          "required_effective_Cz_weight": 26.946946489822576,
+          "required_effective_Cz_20pct_reserve": 32.33633578778709
+        },
+        {
+          "assumed_forward_speed_m_s": 1.0,
+          "qS_N": 0.03408373051581611,
+          "required_effective_Cz_weight": 8.631669583923054,
+          "required_effective_Cz_20pct_reserve": 10.358003500707666
+        },
+        {
+          "assumed_forward_speed_m_s": 2.0,
+          "qS_N": 0.1035817305158161,
+          "required_effective_Cz_weight": 2.8402643838343486,
+          "required_effective_Cz_20pct_reserve": 3.4083172606012186
+        },
+        {
+          "assumed_forward_speed_m_s": 3.0,
+          "qS_N": 0.21941173051581608,
+          "required_effective_Cz_weight": 1.3408558389670642,
+          "required_effective_Cz_20pct_reserve": 1.6090270067604768
+        }
+      ],
+      "left_dominant_samples": 0,
+      "right_dominant_samples": 0,
+      "pitch_offset_samples": 0,
+      "lost_pwm_frames_after_0p11s": 0,
+      "final_virtual_pwm_disabled": true
+    },
+    "neutral40_sag_derated": {
+      "elapsed_simulated_s": 65,
+      "analysis_start_s": 5,
+      "commanded_wing_cap_deg": 50.0,
+      "neutral_command_half_amplitude_deg": 40.0,
+      "frequency_hz": 2.5,
+      "full_steering_required_rate_deg_s": 785.3981633974482,
+      "integrator_substeps_per_pwm_frame": 3,
+      "drive_assumptions": {
+        "voltage": 6.0,
+        "wing_mass_radius_m": 0.18,
+        "drag_coefficient": 1.6,
+        "servo_bandwidth_hz": 9.0,
+        "factor": 0.75
+      },
+      "sides": {
+        "left": {
+          "target_half_range_deg": 40.0,
+          "simulated_half_range_deg": 38.95338497067698,
+          "tracking_rmse_deg": 12.484646840673767,
+          "torque_clip_pct": 33.93393393393401,
+          "peak_simulated_rate_deg_s": 554.6402019163972,
+          "positive_shaft_work_j": 1.9072010386540257
+        },
+        "right": {
+          "target_half_range_deg": 40.0,
+          "simulated_half_range_deg": 38.95338497067698,
+          "tracking_rmse_deg": 12.484646840673767,
+          "torque_clip_pct": 33.93393393393401,
+          "peak_simulated_rate_deg_s": 554.6402019163972,
+          "positive_shaft_work_j": 1.9072010386540257
+        }
+      },
+      "force_screen": [
+        {
+          "assumed_forward_speed_m_s": 0.0,
+          "qS_N": 0.010407989746357194,
+          "required_effective_Cz_weight": 28.26669771681607,
+          "required_effective_Cz_20pct_reserve": 33.920037260179285
+        },
+        {
+          "assumed_forward_speed_m_s": 1.0,
+          "qS_N": 0.03357398974635719,
+          "required_effective_Cz_weight": 8.762720850950426,
+          "required_effective_Cz_20pct_reserve": 10.515265021140511
+        },
+        {
+          "assumed_forward_speed_m_s": 2.0,
+          "qS_N": 0.10307198974635717,
+          "required_effective_Cz_weight": 2.854310862960688,
+          "required_effective_Cz_20pct_reserve": 3.425173035552826
+        },
+        {
+          "assumed_forward_speed_m_s": 3.0,
+          "qS_N": 0.21890198974635716,
+          "required_effective_Cz_weight": 1.3439781901520877,
+          "required_effective_Cz_20pct_reserve": 1.6127738281825053
+        }
+      ],
+      "left_dominant_samples": 0,
+      "right_dominant_samples": 0,
+      "pitch_offset_samples": 0,
+      "lost_pwm_frames_after_0p11s": 0,
+      "final_virtual_pwm_disabled": true
+    },
+    "neutral40_favorable": {
+      "elapsed_simulated_s": 65,
+      "analysis_start_s": 5,
+      "commanded_wing_cap_deg": 50.0,
+      "neutral_command_half_amplitude_deg": 40.0,
+      "frequency_hz": 2.5,
+      "full_steering_required_rate_deg_s": 785.3981633974482,
+      "integrator_substeps_per_pwm_frame": 3,
+      "drive_assumptions": {
+        "voltage": 8.4,
+        "wing_mass_radius_m": 0.14,
+        "drag_coefficient": 0.8,
+        "servo_bandwidth_hz": 16.0,
+        "factor": 1.0
+      },
+      "sides": {
+        "left": {
+          "target_half_range_deg": 40.0,
+          "simulated_half_range_deg": 39.722300075644846,
+          "tracking_rmse_deg": 6.229214498512783,
+          "torque_clip_pct": 0.0,
+          "peak_simulated_rate_deg_s": 619.6453430686736,
+          "positive_shaft_work_j": 1.5792902457813436
+        },
+        "right": {
+          "target_half_range_deg": 40.0,
+          "simulated_half_range_deg": 39.722300075644846,
+          "tracking_rmse_deg": 6.229214498512783,
+          "torque_clip_pct": 0.0,
+          "peak_simulated_rate_deg_s": 619.6453430686736,
+          "positive_shaft_work_j": 1.5792902457813436
+        }
+      },
+      "force_screen": [
+        {
+          "assumed_forward_speed_m_s": 0.0,
+          "qS_N": 0.011065590301379425,
+          "required_effective_Cz_weight": 26.58687805957585,
+          "required_effective_Cz_20pct_reserve": 31.90425367149102
+        },
+        {
+          "assumed_forward_speed_m_s": 1.0,
+          "qS_N": 0.03423159030137942,
+          "required_effective_Cz_weight": 8.59438598703212,
+          "required_effective_Cz_20pct_reserve": 10.313263184438545
+        },
+        {
+          "assumed_forward_speed_m_s": 2.0,
+          "qS_N": 0.1037295903013794,
+          "required_effective_Cz_weight": 2.836215771654192,
+          "required_effective_Cz_20pct_reserve": 3.40345892598503
+        },
+        {
+          "assumed_forward_speed_m_s": 3.0,
+          "qS_N": 0.2195595903013794,
+          "required_effective_Cz_weight": 1.3399528556059235,
+          "required_effective_Cz_20pct_reserve": 1.6079434267271082
+        }
+      ],
+      "left_dominant_samples": 0,
+      "right_dominant_samples": 0,
+      "pitch_offset_samples": 0,
+      "lost_pwm_frames_after_0p11s": 0,
+      "final_virtual_pwm_disabled": true
+    },
+    "neutral45_at3Hz": {
+      "elapsed_simulated_s": 65,
+      "analysis_start_s": 5,
+      "commanded_wing_cap_deg": 56.25,
+      "neutral_command_half_amplitude_deg": 45.0,
+      "frequency_hz": 3.0,
+      "full_steering_required_rate_deg_s": 1060.2875205865553,
+      "integrator_substeps_per_pwm_frame": 3,
+      "drive_assumptions": {
+        "voltage": 7.4,
+        "wing_mass_radius_m": 0.16,
+        "drag_coefficient": 1.2,
+        "servo_bandwidth_hz": 12.0,
+        "factor": 1.0
+      },
+      "sides": {
+        "left": {
+          "target_half_range_deg": 45.0,
+          "simulated_half_range_deg": 44.082190011668445,
+          "tracking_rmse_deg": 11.664756466208202,
+          "torque_clip_pct": 4.204204204204332,
+          "peak_simulated_rate_deg_s": 821.9809064321544,
+          "positive_shaft_work_j": 3.841568860675257
+        },
+        "right": {
+          "target_half_range_deg": 45.0,
+          "simulated_half_range_deg": 44.082190011668445,
+          "tracking_rmse_deg": 11.664756466208202,
+          "torque_clip_pct": 4.204204204204332,
+          "peak_simulated_rate_deg_s": 821.9809064321544,
+          "positive_shaft_work_j": 3.841568860675257
+        }
+      },
+      "force_screen": [
+        {
+          "assumed_forward_speed_m_s": 0.0,
+          "qS_N": 0.019600069373490757,
+          "required_effective_Cz_weight": 15.010125443632715,
+          "required_effective_Cz_20pct_reserve": 18.01215053235926
+        },
+        {
+          "assumed_forward_speed_m_s": 1.0,
+          "qS_N": 0.042766069373490756,
+          "required_effective_Cz_weight": 6.879273786670802,
+          "required_effective_Cz_20pct_reserve": 8.255128544004963
+        },
+        {
+          "assumed_forward_speed_m_s": 2.0,
+          "qS_N": 0.11226406937349073,
+          "required_effective_Cz_weight": 2.6206024923364324,
+          "required_effective_Cz_20pct_reserve": 3.144722990803719
+        },
+        {
+          "assumed_forward_speed_m_s": 3.0,
+          "qS_N": 0.22809406937349072,
+          "required_effective_Cz_weight": 1.2898165252962603,
+          "required_effective_Cz_20pct_reserve": 1.5477798303555124
+        }
+      ],
+      "left_dominant_samples": 0,
+      "right_dominant_samples": 0,
+      "pitch_offset_samples": 0,
+      "lost_pwm_frames_after_0p11s": 0,
+      "final_virtual_pwm_disabled": true
+    }
+  },
+  "maneuver": {
+    "elapsed_simulated_s": 65,
+    "analysis_start_s": 5,
+    "commanded_wing_cap_deg": 50.0,
+    "neutral_command_half_amplitude_deg": 40.0,
+    "frequency_hz": 2.5,
+    "full_steering_required_rate_deg_s": 785.3981633974482,
+    "integrator_substeps_per_pwm_frame": 3,
+    "drive_assumptions": {
+      "voltage": 7.4,
+      "wing_mass_radius_m": 0.16,
+      "drag_coefficient": 1.2,
+      "servo_bandwidth_hz": 12.0,
+      "factor": 1.0
+    },
+    "sides": {
+      "left": {
+        "target_half_range_deg": 50.0,
+        "simulated_half_range_deg": 49.31894245140512,
+        "tracking_rmse_deg": 8.73697617337589,
+        "torque_clip_pct": 0.0,
+        "peak_simulated_rate_deg_s": 770.4597245693299,
+        "positive_shaft_work_j": 1.8730952282157765
+      },
+      "right": {
+        "target_half_range_deg": 50.0,
+        "simulated_half_range_deg": 49.318978846985345,
+        "tracking_rmse_deg": 8.729659121157333,
+        "torque_clip_pct": 0.0,
+        "peak_simulated_rate_deg_s": 770.44036534792,
+        "positive_shaft_work_j": 1.8663815174916338
+      }
+    },
+    "force_screen": [
+      {
+        "assumed_forward_speed_m_s": 0.0,
+        "qS_N": 0.01118189876929816,
+        "required_effective_Cz_weight": 26.310334771387453,
+        "required_effective_Cz_20pct_reserve": 31.572401725664943
+      },
+      {
+        "assumed_forward_speed_m_s": 1.0,
+        "qS_N": 0.034347898769298155,
+        "required_effective_Cz_weight": 8.56528377400978,
+        "required_effective_Cz_20pct_reserve": 10.278340528811736
+      },
+      {
+        "assumed_forward_speed_m_s": 2.0,
+        "qS_N": 0.10384589876929815,
+        "required_effective_Cz_weight": 2.833039181004031,
+        "required_effective_Cz_20pct_reserve": 3.3996470172048374
+      },
+      {
+        "assumed_forward_speed_m_s": 3.0,
+        "qS_N": 0.2196758987692981,
+        "required_effective_Cz_weight": 1.339243411080639,
+        "required_effective_Cz_20pct_reserve": 1.607092093296767
+      }
+    ],
+    "left_dominant_samples": 3330,
+    "right_dominant_samples": 3330,
+    "pitch_offset_samples": 6660,
+    "lost_pwm_frames_after_0p11s": 0,
+    "final_virtual_pwm_disabled": true
+  }
+}

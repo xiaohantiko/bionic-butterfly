@@ -1,0 +1,7 @@
+33 control checkpoints passed; 5 straight scenarios and one maneuver replay.
+cap40_nominal: 31.6deg, clip=0.0%, Cz(0,2 m/s)=50.50,3.54
+neutral40_nominal: 39.5deg, clip=0.0%, Cz(0,2 m/s)=32.34,3.41
+neutral40_sag_derated: 39.0deg, clip=33.9%, Cz(0,2 m/s)=33.92,3.43
+neutral40_favorable: 39.7deg, clip=0.0%, Cz(0,2 m/s)=31.90,3.40
+neutral45_at3Hz: 44.1deg, clip=4.2%, Cz(0,2 m/s)=18.01,3.14
+Modeled command path PASS; physical free flight UNVERIFIED.

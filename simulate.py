@@ -52,6 +52,7 @@ class RcInput:
     def feed(self, chunk, now):
         self.buffer.extend(chunk)
         commands = []
+        saw_link_loss = False
         while self.buffer:
             start = self.buffer.find(b"\xc8")
             if start < 0:
@@ -76,6 +77,7 @@ class RcInput:
             if body[0] == 0x14 and length == 12:
                 # Standard link statistics: third payload byte is uplink LQ.
                 self.link_zero = body[3] == 0
+                saw_link_loss |= self.link_zero
             if body[0] != 0x16 or length != 24:
                 continue
             packed = int.from_bytes(body[1:], "little")
@@ -89,15 +91,16 @@ class RcInput:
                 return (raw - CHANNEL_CENTER) / span
             commands.append(CommandFrame(now, (throttle - CHANNEL_MIN) / (CHANNEL_MAX - CHANNEL_MIN),
                                          centered(turn), centered(pitch), arm > 1400, True, False))
-        return commands
+        return commands, saw_link_loss
 
 
 def control_sample(decoder, mixer, chunk, now, usb=False):
     if usb:
         decoder.buffer.clear()
         return mixer.step(CommandFrame(now, 0., 0., 0., False, False, True))
-    frames = decoder.feed(chunk, now)
-    if decoder.link_zero:
+    frames, saw_link_loss = decoder.feed(chunk, now)
+    # A recovery report in the same read must not erase a real loss event.
+    if decoder.link_zero or saw_link_loss:
         return mixer.step(CommandFrame(now, 0., 0., 0., False, False, False))
     if not frames:
         return mixer.tick(now)
@@ -237,6 +240,14 @@ def run_faults():
     check(.51, good_low, "ARM_LOW_SEEN_WAIT_NEW_EDGE")
     check(.52, good_high, "SIMULATED_TARGETS_ACTIVE", has_pwm=True)
     check(.53, good_low, "ARM_LOW_SEEN_WAIT_NEW_EDGE")
+    check(.54, good_high, "SIMULATED_TARGETS_ACTIVE", has_pwm=True)
+    lost_packet = b"\xc8\x0c" + lost + bytes((crc8(lost),))
+    restored_packet = b"\xc8\x0c" + restored + bytes((crc8(restored),))
+    check(.55, lost_packet + restored_packet + good_high, "LINK_LOST")
+    check(.56, good_high, "NEEDS_VALID_ARM_LOW")
+    check(.57, good_low, "ARM_LOW_SEEN_WAIT_NEW_EDGE")
+    check(.58, good_high, "SIMULATED_TARGETS_ACTIVE", has_pwm=True)
+    check(.59, good_low, "ARM_LOW_SEEN_WAIT_NEW_EDGE")
     require(parser.rejected >= 1, "Bad CRC did not register")
     return results
 
