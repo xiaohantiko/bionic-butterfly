@@ -1,0 +1,10 @@
+{"kind":"frame","time_s":0.0,"throttle":0.0,"turn":0.0,"pitch":0.0,"arm":true,"link_ok":true,"usb_vbus_present":false}
+{"kind":"frame","time_s":0.02,"throttle":0.0,"turn":0.0,"pitch":0.0,"arm":false,"link_ok":true,"usb_vbus_present":false}
+{"kind":"frame","time_s":0.04,"throttle":0.0,"turn":0.0,"pitch":0.0,"arm":true,"link_ok":true,"usb_vbus_present":false}
+{"kind":"frame","time_s":0.06,"throttle":0.5,"turn":0.7,"pitch":0.25,"arm":true,"link_ok":true,"usb_vbus_present":false}
+{"kind":"frame","time_s":0.08,"throttle":0.5,"turn":0.7,"pitch":0.25,"arm":true,"link_ok":false,"usb_vbus_present":false}
+{"kind":"frame","time_s":0.10,"throttle":0.0,"turn":0.0,"pitch":0.0,"arm":true,"link_ok":true,"usb_vbus_present":false}
+{"kind":"frame","time_s":0.12,"throttle":0.0,"turn":0.0,"pitch":0.0,"arm":false,"link_ok":true,"usb_vbus_present":false}
+{"kind":"frame","time_s":0.14,"throttle":0.0,"turn":0.0,"pitch":0.0,"arm":true,"link_ok":true,"usb_vbus_present":false}
+{"kind":"frame","time_s":0.16,"throttle":0.5,"turn":-0.5,"pitch":0.0,"arm":true,"link_ok":true,"usb_vbus_present":false}
+{"kind":"tick","time_s":0.42}
