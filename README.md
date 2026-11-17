@@ -1,6 +1,18 @@
 # 遥控仿生蝴蝶仿真
 
-这个项目演示四片分体翼的遥控原理和离线验证方法。左前翼、左后翼、右前翼、右后翼分别有翼膜、骨架和夹座。每侧一个驱动通过共轴摇臂带动同侧前后翼。油门改变两侧扑翼幅度，转向输入改变幅度差，俯仰输入调整翼根平均角。实际产生的推进及操纵力矩还取决于翼膜变形、来流和机身姿态。
+这个项目演示四片分体翼的遥控原理，并提供可在普通电脑上运行的 Python 仿真。当前验证进度为离线仿真，实物飞行能力待验证。
+
+## 更新记录
+
+### 2026-11-17
+
+- 补充四片分体翼与同侧联动的结构说明。流程图展示遥控指令怎样转换成虚拟 PWM。
+- 补充测试覆盖范围和结果读取方法。状态机有 22 项自动化测试，综合仿真会检查 27 个控制时序点，并输出 5 组直飞指令情景和 1 组转向回放的模型结果。
+- 补充公开模型的假设。前后翼按侧等效，使用合成几何。四翼相互影响、硬件断电保护及飞行表现需通过实测确认。
+
+## 工作原理
+
+左前翼、左后翼、右前翼、右后翼分别有翼膜、骨架和夹座。每侧一个驱动通过共轴摇臂带动同侧前后翼。油门改变两侧扑翼幅度，转向输入改变幅度差，俯仰输入调整翼根平均角。实际产生的推进及操纵力矩还取决于翼膜变形、来流和机身姿态。
 
 ```mermaid
 flowchart LR
@@ -25,7 +37,9 @@ python3 -B run_sim.py --input example-commands.jsonl
 python3 -B simulate.py
 ```
 
-`mixer_sim.py` 实现遥控状态机和双翼角度混控，`run_sim.py` 用于演示或回放 JSONL，`simulate.py` 合成 CRSF 字节流并检查状态转换、角度跟踪和驱动力需求。综合仿真生成 `output/simulation-trace.csv` 和 `output/simulation-result.json`，可用 `--output` 更改保存位置。
+- [`mixer_sim.py`](mixer_sim.py) 负责遥控状态机和左右扑翼混控。自动化测试覆盖解锁条件、失联和超时后的撤销输出、USB 互锁，以及角度和速度限幅。
+- [`run_sim.py`](run_sim.py) 演示状态切换，也可回放 [JSONL 示例](example-commands.jsonl)。`--summary` 只显示状态或原因变化的事件。
+- [`simulate.py`](simulate.py) 合成 CRSF 字节流，检查分段接收、无效数据包及故障恢复，并记录虚拟 PWM、模型中的舵机角度和负载情况。综合仿真生成 `output/simulation-trace.csv` 和 `output/simulation-result.json`，可用 `--output` 更改保存位置。JSON 中 `control_simulation` 记录控制检查结果，`flight_feasibility` 保持 `UNVERIFIED`。
 
 ## 模型边界
 
