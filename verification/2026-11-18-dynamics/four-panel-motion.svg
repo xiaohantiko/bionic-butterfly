@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 370" width="880" height="370" role="img">
+<title>Four synthetic panel angles, one simulated cycle at quarter speed</title>
+<rect width="100%" height="100%" fill="#fff"/><g font-family="sans-serif" fill="#203345">
+<text x="32" y="40" font-size="23">Four-panel angular response</text>
+<text x="32" y="66" font-size="15">One simulated cycle (1.00–1.50 s) shown at ¼ speed; fixed front view, separated rows for clarity.</text>
+<text x="230" y="104" text-anchor="middle" font-size="18">Free stroke</text>
+<path d="M70 170 h320" stroke="#d5dfe4" stroke-dasharray="4 5"/>
+<text x="230" y="199" text-anchor="middle" font-size="13">Fore</text>
+<g transform="translate(224 170)"><g transform="rotate(-3.8412)">
+<animateTransform attributeName="transform" type="rotate" values="-3.8412;0.2851;4.4283;8.5213;12.4982;16.2948;19.8489;23.1008;25.9937;28.4746;30.4953;32.0138;32.9959;33.4166;33.2615;32.5387;31.2876;29.5651;27.4274;24.9196;22.0739;18.9158;15.4727;11.7799;7.8839;3.8412;-0.2851;-4.4283;-8.5213;-12.4982;-16.2948;-19.8489;-23.1008;-25.9937;-28.4746;-30.4953;-32.0138;-32.9959;-33.4166;-33.2615;-32.5387;-31.2876;-29.5651;-27.4274;-24.9196;-22.0739;-18.9158;-15.4727;-11.7799;-7.8839;-3.8412" dur="2s" repeatCount="indefinite"/>
+<path d="M0 0 h-125" stroke="#147d87" stroke-width="5" stroke-linecap="round"/>
+<circle cx="-125" cy="0" r="5" fill="#147d87"/></g><circle r="4" fill="#203345"/></g>
+<g transform="translate(236 170)"><g transform="rotate(3.8412)">
+<animateTransform attributeName="transform" type="rotate" values="3.8412;-0.2851;-4.4283;-8.5213;-12.4982;-16.2948;-19.8489;-23.1008;-25.9937;-28.4746;-30.4953;-32.0138;-32.9959;-33.4166;-33.2615;-32.5387;-31.2876;-29.5651;-27.4274;-24.9196;-22.0739;-18.9158;-15.4727;-11.7799;-7.8839;-3.8412;0.2851;4.4283;8.5213;12.4982;16.2948;19.8489;23.1008;25.9937;28.4746;30.4953;32.0138;32.9959;33.4166;33.2615;32.5387;31.2876;29.5651;27.4274;24.9196;22.0739;18.9158;15.4727;11.7799;7.8839;3.8412" dur="2s" repeatCount="indefinite"/>
+<path d="M0 0 h125" stroke="#147d87" stroke-width="5" stroke-linecap="round"/>
+<circle cx="125" cy="0" r="5" fill="#147d87"/></g><circle r="4" fill="#203345"/></g>
+<path d="M70 276 h320" stroke="#d5dfe4" stroke-dasharray="4 5"/>
+<text x="230" y="305" text-anchor="middle" font-size="13">Hind</text>
+<g transform="translate(224 276)"><g transform="rotate(-4.4849)">
+<animateTransform attributeName="transform" type="rotate" values="-4.4849;-0.3913;3.7363;7.8329;11.8336;15.6736;19.2893;22.6186;25.6010;28.1793;30.3003;31.9162;32.9862;33.4786;33.3729;32.6766;31.4427;29.7446;27.6472;25.1950;22.4145;19.3253;15.9498;12.3206;8.4812;4.4849;0.3913;-3.7363;-7.8329;-11.8336;-15.6736;-19.2893;-22.6186;-25.6010;-28.1793;-30.3003;-31.9162;-32.9862;-33.4786;-33.3729;-32.6766;-31.4427;-29.7446;-27.6472;-25.1950;-22.4145;-19.3253;-15.9498;-12.3206;-8.4812;-4.4849" dur="2s" repeatCount="indefinite"/>
+<path d="M0 0 h-125" stroke="#147d87" stroke-width="5" stroke-linecap="round"/>
+<circle cx="-125" cy="0" r="5" fill="#147d87"/></g><circle r="4" fill="#203345"/></g>
+<g transform="translate(236 276)"><g transform="rotate(4.4849)">
+<animateTransform attributeName="transform" type="rotate" values="4.4849;0.3913;-3.7363;-7.8329;-11.8336;-15.6736;-19.2893;-22.6186;-25.6010;-28.1793;-30.3003;-31.9162;-32.9862;-33.4786;-33.3729;-32.6766;-31.4427;-29.7446;-27.6472;-25.1950;-22.4145;-19.3253;-15.9498;-12.3206;-8.4812;-4.4849;-0.3913;3.7363;7.8329;11.8336;15.6736;19.2893;22.6186;25.6010;28.1793;30.3003;31.9162;32.9862;33.4786;33.3729;32.6766;31.4427;29.7446;27.6472;25.1950;22.4145;19.3253;15.9498;12.3206;8.4812;4.4849" dur="2s" repeatCount="indefinite"/>
+<path d="M0 0 h125" stroke="#147d87" stroke-width="5" stroke-linecap="round"/>
+<circle cx="125" cy="0" r="5" fill="#147d87"/></g><circle r="4" fill="#203345"/></g>
+<text x="652" y="104" text-anchor="middle" font-size="18">Right hind obstructed</text>
+<path d="M492 170 h320" stroke="#d5dfe4" stroke-dasharray="4 5"/>
+<text x="652" y="199" text-anchor="middle" font-size="13">Fore</text>
+<g transform="translate(646 170)"><g transform="rotate(-3.8412)">
+<animateTransform attributeName="transform" type="rotate" values="-3.8412;0.2851;4.4283;8.5213;12.4982;16.2948;19.8489;23.1008;25.9937;28.4746;30.4953;32.0138;32.9959;33.4166;33.2615;32.5387;31.2876;29.5651;27.4274;24.9196;22.0739;18.9158;15.4727;11.7799;7.8839;3.8412;-0.2851;-4.4283;-8.5213;-12.4982;-16.2948;-19.8489;-23.1008;-25.9937;-28.4746;-30.4953;-32.0138;-32.9959;-33.4166;-33.2615;-32.5387;-31.2876;-29.5651;-27.4274;-24.9196;-22.0739;-18.9158;-15.4727;-11.7799;-7.8839;-3.8412" dur="2s" repeatCount="indefinite"/>
+<path d="M0 0 h-125" stroke="#147d87" stroke-width="5" stroke-linecap="round"/>
+<circle cx="-125" cy="0" r="5" fill="#147d87"/></g><circle r="4" fill="#203345"/></g>
+<g transform="translate(658 170)"><g transform="rotate(3.8413)">
+<animateTransform attributeName="transform" type="rotate" values="3.8413;-0.2829;-4.4255;-8.5191;-12.4970;-16.2934;-19.7423;-22.5339;-24.7648;-26.6041;-28.0617;-29.1860;-29.9732;-30.3621;-30.3014;-29.7544;-28.7218;-27.2460;-25.3809;-23.1780;-20.6798;-17.9162;-14.9151;-11.6959;-8.2225;-4.4346;-0.3389;3.9596;8.2961;12.5030;16.4499;20.0548;23.2754;26.0918;28.4894;30.4483;31.9393;32.9267;33.3745;33.2539;32.5591;31.3214;29.5973;27.4483;24.9263;22.0694;18.9056;15.4620;11.7722;7.8804;3.8413" dur="2s" repeatCount="indefinite"/>
+<path d="M0 0 h125" stroke="#147d87" stroke-width="5" stroke-linecap="round"/>
+<circle cx="125" cy="0" r="5" fill="#147d87"/></g><circle r="4" fill="#203345"/></g>
+<path d="M492 276 h320" stroke="#d5dfe4" stroke-dasharray="4 5"/>
+<text x="652" y="305" text-anchor="middle" font-size="13">Hind</text>
+<g transform="translate(646 276)"><g transform="rotate(-4.4849)">
+<animateTransform attributeName="transform" type="rotate" values="-4.4849;-0.3913;3.7363;7.8329;11.8336;15.6736;19.2893;22.6186;25.6010;28.1793;30.3003;31.9162;32.9862;33.4786;33.3729;32.6766;31.4427;29.7446;27.6472;25.1950;22.4145;19.3253;15.9498;12.3206;8.4812;4.4849;0.3913;-3.7363;-7.8329;-11.8336;-15.6736;-19.2893;-22.6186;-25.6010;-28.1793;-30.3003;-31.9162;-32.9862;-33.4786;-33.3729;-32.6766;-31.4427;-29.7446;-27.6472;-25.1950;-22.4145;-19.3253;-15.9498;-12.3206;-8.4812;-4.4849" dur="2s" repeatCount="indefinite"/>
+<path d="M0 0 h-125" stroke="#147d87" stroke-width="5" stroke-linecap="round"/>
+<circle cx="-125" cy="0" r="5" fill="#147d87"/></g><circle r="4" fill="#203345"/></g>
+<g transform="translate(658 276)"><g transform="rotate(4.4830)">
+<animateTransform attributeName="transform" type="rotate" values="4.4830;0.3918;-3.7344;-7.8308;-11.8319;-15.2216;-14.6935;-14.5464;-15.4336;-15.3191;-15.4486;-15.6654;-15.6477;-15.6687;-15.6449;-15.5234;-15.4006;-15.2228;-14.9905;-14.7489;-14.4606;-14.1452;-13.7781;-12.6667;-10.1265;-6.2927;-1.7280;3.0297;7.6439;11.9592;15.9263;19.5391;22.7974;25.6895;28.1888;30.2571;31.8502;32.9235;33.4371;33.3605;32.6902;31.4713;29.7752;27.6702;25.2061;22.4147;19.3184;15.9406;12.3125;8.4761;4.4830" dur="2s" repeatCount="indefinite"/>
+<path d="M0 0 h125" stroke="#c45b12" stroke-width="5" stroke-linecap="round"/>
+<circle cx="125" cy="0" r="5" fill="#c45b12"/></g><circle r="4" fill="#203345"/></g>
+<text x="32" y="355" font-size="13">Each line shows an effective panel angle. Relative motion is modeled; the drawing does not represent physical spacing.</text></g></svg>

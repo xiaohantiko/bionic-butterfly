@@ -1,0 +1,132 @@
+{
+  "source": "synthetic, not measured",
+  "integrator": "RK4",
+  "published_step_s": 0.0005,
+  "comparison_step_s": 0.001,
+  "force_model": "none; angular drag surrogate only",
+  "trace_interval_s": 0.01,
+  "duration_s_per_case": 3,
+  "rows_per_case": 301,
+  "parameters_si": {
+    "root_inertia": 2e-05,
+    "fore_inertia": 3.6e-05,
+    "hind_inertia": 2.3e-05,
+    "fore_stiffness": 0.22,
+    "hind_stiffness": 0.13,
+    "fore_coupling_damping": 0.0014,
+    "hind_coupling_damping": 0.00085,
+    "root_damping": 0.00045,
+    "panel_damping": 0.00012,
+    "quadratic_drag": 5.5e-05,
+    "tracking_stiffness": 0.72,
+    "tracking_damping": 0.0032,
+    "torque_limit": 0.09,
+    "stop_angle": 0.24434609527920614,
+    "stop_stiffness": 1.1,
+    "stop_damping": 0.002,
+    "frequency_hz": 2.0,
+    "ramp_s": 0.5
+  },
+  "cases": {
+    "straight": {
+      "pre_event_half_range_deg_1_to_2s": {
+        "L_root": 32.53195832378093,
+        "LF": 33.41655011988247,
+        "LH": 33.478569070131755,
+        "R_root": 32.53195832378093,
+        "RF": 33.41655011988247,
+        "RH": 33.478569070131755
+      },
+      "RH_peak_deg_1_to_2s": 33.478569069989774,
+      "peak_RH_contact_Nm_sampled": 0.0,
+      "max_abs_energy_residual_J_sampled": 8.976833165696974e-11,
+      "stored_J_at_2s": 0.004196299949504326,
+      "stored_J_final": 0.004196299949504347,
+      "max_abs_angle_diff_deg_1ms_vs_0p5ms_all_outputs": 2.202828810027313e-06,
+      "drive_off_s": null,
+      "left_command_deg": 32,
+      "right_command_deg": 32,
+      "obstacle": false
+    },
+    "left_smaller": {
+      "pre_event_half_range_deg_1_to_2s": {
+        "L_root": 22.35852430178112,
+        "LF": 22.956717099901816,
+        "LH": 22.999502500366436,
+        "R_root": 36.6024307780327,
+        "RF": 37.603131525429696,
+        "RH": 37.67105057369025
+      },
+      "RH_peak_deg_1_to_2s": 37.67105058075508,
+      "peak_RH_contact_Nm_sampled": 0.0,
+      "max_abs_energy_residual_J_sampled": 7.812400726336932e-11,
+      "stored_J_at_2s": 0.0036489360913915998,
+      "stored_J_final": 0.00364893609139161,
+      "max_abs_angle_diff_deg_1ms_vs_0p5ms_all_outputs": 2.4499903865660144e-06,
+      "drive_off_s": null,
+      "left_command_deg": 22,
+      "right_command_deg": 36,
+      "obstacle": false
+    },
+    "right_smaller": {
+      "pre_event_half_range_deg_1_to_2s": {
+        "L_root": 36.6024307780327,
+        "LF": 37.603131525429696,
+        "LH": 37.67105057369025,
+        "R_root": 22.35852430178112,
+        "RF": 22.956717099901816,
+        "RH": 22.999502500366436
+      },
+      "RH_peak_deg_1_to_2s": 22.999502500257144,
+      "peak_RH_contact_Nm_sampled": 0.0,
+      "max_abs_energy_residual_J_sampled": 7.812403501894494e-11,
+      "stored_J_at_2s": 0.0036489360913915998,
+      "stored_J_final": 0.003648936091391611,
+      "max_abs_angle_diff_deg_1ms_vs_0p5ms_all_outputs": 2.4499903865660144e-06,
+      "drive_off_s": null,
+      "left_command_deg": 36,
+      "right_command_deg": 22,
+      "obstacle": false
+    },
+    "right_hind_stop": {
+      "pre_event_half_range_deg_1_to_2s": {
+        "L_root": 32.53195832378093,
+        "LF": 33.41655011988247,
+        "LH": 33.478569070131755,
+        "R_root": 31.11507089534905,
+        "RF": 31.86827180894541,
+        "RH": 24.552897149794365
+      },
+      "RH_peak_deg_1_to_2s": 15.668737190082643,
+      "peak_RH_contact_Nm_sampled": 0.03216069477638934,
+      "max_abs_energy_residual_J_sampled": 6.63281636253954e-07,
+      "stored_J_at_2s": 0.004193803390244262,
+      "stored_J_final": 0.004193803390244282,
+      "max_abs_angle_diff_deg_1ms_vs_0p5ms_all_outputs": 0.023633489603128055,
+      "drive_off_s": null,
+      "left_command_deg": 32,
+      "right_command_deg": 32,
+      "obstacle": true
+    },
+    "drive_off": {
+      "pre_event_half_range_deg_1_to_2s": {
+        "L_root": 32.53195832378093,
+        "LF": 33.41655011988247,
+        "LH": 33.478569070131755,
+        "R_root": 32.53195832378093,
+        "RF": 33.41655011988247,
+        "RH": 33.478569070131755
+      },
+      "RH_peak_deg_1_to_2s": 33.478569069989774,
+      "peak_RH_contact_Nm_sampled": 0.0,
+      "max_abs_energy_residual_J_sampled": 4.2101268304950423e-10,
+      "stored_J_at_2s": 0.004196299949504326,
+      "stored_J_final": 2.1579317963373433e-11,
+      "max_abs_angle_diff_deg_1ms_vs_0p5ms_all_outputs": 3.0353205184852072e-06,
+      "drive_off_s": 2,
+      "left_command_deg": 32,
+      "right_command_deg": 32,
+      "obstacle": false
+    }
+  }
+}
